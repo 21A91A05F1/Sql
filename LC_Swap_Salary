@@ -1,0 +1,20 @@
+Write an SQL query to swap all 'f' and 'm' values (i.e., change all 'f' values to 'm' and vice versa) 
+with a single update statement and no intermediate temporary tables.
+Note that you must write a single update statement, 
+do not write any select statement for this problem.
+Explanation: 
+(1, A) and (3, C) were changed from 'm' to 'f'.
+(2, B) and (4, D) were changed from 'f' to 'm'.
+===============================================================================
+A:
+update salary set sex =if(sex='m' ,'f','m');
+================================================================================
+My Explaination:
+To swap, m to f (or) f to m.
+We should update the table salary which contains sex as a column.
+if() function is used to swap f and m , return f if sex is m , return m otherwise.
+Update statement:
+=================
+The UPDATE statement in SQL is used to update the data of an existing table in the database. 
+We can update single columns as well as multiple columns using the UPDATE statements as per our requirement.
+
