@@ -1,0 +1,24 @@
+Write an SQL query to report all the duplicate emails. Note that it's guaranteed that the email field is not NULL.
+Return the result table in any order.
+Person =
+| id | email   |
+| -- | ------- |
+| 1  | a@b.com |
+| 2  | c@d.com |
+| 3  | a@b.com |
+| 4  | c@d.com |
+Output
+| email   |
+| ------- |
+| a@b.com |
+| c@d.com |
+===================================================================================================
+A:
+select email from person
+group by email
+having count(email)>1;
+=====================================================================================================
+A:
+Other's solution:
+SELECT DISTINCT(p1.email) from Person p1, Person p2
+where p1.id <> p2.id AND p1.email = p2.email;
