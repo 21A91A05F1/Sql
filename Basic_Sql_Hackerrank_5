@@ -1,0 +1,27 @@
+32:
+Query the list of CITY names from STATION that do not start with vowels.
+Your result cannot contain duplicates.
+A:
+select distinct city from station where substring(city,1,1) not in ('A','E','I','O','U');
+===================================================================================
+33:
+Query the list of CITY names from STATION that do not end with vowels.
+Your result cannot contain duplicates.
+A:
+select distinct city from station where substring(reverse(city),1,1) not in ('A','E','I','O','U');
+============================================================================================
+34.
+Query the list of CITY names from STATION that either do not start with vowels or do not end with vowels.
+Your result cannot contain duplicates.
+A:
+select distinct city from station where substring(city,1,1) not in ('A','E','I','O','U') 
+or substring(reverse(city),1,1) not in ('A','E','I','O','U');
+=======================================================================================
+35.
+Query the list of CITY names from STATION that do not start with vowels and do not end with vowels.
+Your result cannot contain duplicates.
+A:
+select distinct city from station where substring(city,1,1) not in ('A','E','I','O','U') 
+and substring(reverse(city),1,1) not in ('A','E','I','O','U');
+=========================================================================================
+
