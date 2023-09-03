@@ -43,8 +43,3 @@ in STATION is greater than 38.7780. Round your answer to 4 decimal places.
 A:
 select round(long_w,4) from station where lat_n=(select min(lat_n) from station where lat_n>38.7780);
 =============================================================================================
-32.
-Given the CITY and COUNTRY tables, query the sum of the populations of all cities
-where the CONTINENT is 'Asia'.
-Note: CITY.CountryCode and COUNTRY.Code are matching key columns.
-A:
