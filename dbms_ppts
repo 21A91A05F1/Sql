@@ -1,0 +1,25 @@
+DDL and DML commands
+DDL Commands -> data definition language
+Create
+Alter
+Rename
+Truncate
+Drop
+
+DML Commands -> data manipulation language
+Insert
+Select
+Delete
+Update
+
+==================================
+  Constraints
+  Constraints enforce limits to the data or type of data that can be inserted/updated/deleted from a table.
+Not null
+Unique
+Check
+Primary key -> not null and unique
+Foreign key ->A foreign key is a column whose values are derived from the primary key of other table.
+default
+
+
