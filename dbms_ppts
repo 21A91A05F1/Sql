@@ -21,5 +21,20 @@ Check
 Primary key -> not null and unique
 Foreign key ->A foreign key is a column whose values are derived from the primary key of other table.
 default
+=====================================
+day to day commands::
+=====================================
+select name as sathwii from movies;
 
+select * from movies where imdb_rating < 5;
+
+SELECT * 
+FROM movies
+WHERE name LIKE 'Se_en';
+
+select name from movies where imdb_rating is  NULL;
+
+select *
+from movies 
+where year<1985 and genre='horror';
 
